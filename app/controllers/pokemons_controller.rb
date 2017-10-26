@@ -11,11 +11,7 @@ class PokemonsController <ApplicationController
   	end
 
 	def create
-	    @pokemon = Pokemon.create(
-	        name: params["pokemon"]["name"],
-	        :level => 1,
-	        :health => 100,
-	        :trainer => current_trainer)
+	    @pokemon = Pokemon.create(name: params["pokemon"]["name"], :level => 1, :health => 100, :trainer => current_trainer)
 	    if @pokemon.valid?
 	      	redirect_to trainer_path(id: current_trainer.id)
 	    else
