@@ -14,6 +14,7 @@ BigBoy
 I passed a "/" because i want it to go back to the home page which is the root that we are trying to get back to after we capture a pokemon.
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
+Because basically it will be modifying the application.html.erb with an error message so that it displays in a way that is readable.
 
 # Give us feedback on the project and decal below!
 
